@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  --line-color: #e5e7eb;
+}
+.title {
+  @apply text-2xl text-center my-2 font-medium;
+}
+.section {
+  @apply my-40;
+}
+.input {
+  @apply w-full p-4 outline-none border border-gray-700/40 my-2 rounded;
+}
