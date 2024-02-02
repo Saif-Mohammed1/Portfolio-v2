@@ -29,7 +29,7 @@ const Experience = () => {
       >
         My Experience
       </motion.h2>
-      <VerticalTimeline lineColor="">
+      <VerticalTimeline lineColor="" animate={true}>
         {experiencesData.map(({ name, desc, date, icon = "" }, inx) => (
           <Fragment key={inx}>
             <VerticalTimelineElement
