@@ -49,11 +49,10 @@ export const emailSender = async (data: FormData) => {
       form, // Pass the form element here
       "vWY253AsB8LFUqx_O"
     );
-
     // console.log("Email sent successfully");
     return { success: "Email sent successfully" };
   } catch (error) {
     // console.error("Error sending email:", error);
-    return { error: `Email sent successfully ${error}` };
+    return { error: `Error sending email ${error}` };
   }
 };

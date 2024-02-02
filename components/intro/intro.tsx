@@ -3,78 +3,111 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { HiDocumentDownload } from "react-icons/hi";
+import { FaGithub } from "react-icons/fa";
+import { BsArrowRight } from "react-icons/bs";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/section-context";
+import { useEffect } from "react";
 
 const Intro = () => {
+  const { ref, inView } = useInView();
+  const { setActiveSection } = useActiveSectionContext();
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Home");
+    }
+  }, [inView]);
   return (
-    <section id="home">
-      {/* <div className="relative border-red-400 border">
-        <div>
-          <Image
-            src="/assets/Saif.jpg"
-            width={150}
-            height={150}
-            priority
-            alt="Saif Mohammed"
-            className="rounded-full"
-          />
-          <span className="absolute bottom-2 right-5 text-[2rem]">👋</span>
-        </div>
-      </div> */}
-      <motion.div
-        className="relative border-red-400 border /border-white"
-        initial={{ x: 100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
+    <section ref={ref} id="home" className="mt-10 md:mt-0">
+      <div
+        className="
+        flex items-center justify-center"
       >
-        {/* <div className="relative"> */}
-        <Image
-          src="/assets/Saif.jpg"
-          width={100}
-          height={100}
-          priority
-          alt="Saif Mohammed"
-          className="rounded-full border-4 border-white"
-        />
-        <span className="absolute bottom-1 left-[2.8rem] /right-5 text-[1.5rem] text-green-500">
-          👋
-        </span>
-        {/* </div> */}
-      </motion.div>
+        <div className="relative ">
+          <motion.div
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ type: "tween", duration: 0.2 }}
+          >
+            <Image
+              src="/assets/Saif.jpg"
+              width={192}
+              height={192}
+              priority
+              alt="Saif Mohammed"
+              className="rounded-full border-4 border-white dark:border-gray-200"
+            />
+          </motion.div>
+          <motion.span
+            className="absolute  bottom-[14px] right-10 text-5xl /text-green-500"
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 125,
+              delay: 0.1,
+              duration: 0.7,
+            }}
+          >
+            👋
+          </motion.span>
+        </div>
+      </div>
 
       <div className="space-y-4">
         <motion.p
-          className="text-xl mt-2"
+          className="text-xl mt-2 text-center"
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.1 }}
+          transition={{ delay: 0.3 }}
         >
-          <span>Hi there!,</span>
-          <strong>I'm a Mern Developer </strong>
-          <span>I make the complex simple.</span>
+          <span className="font-bold text-gray-800">Hi there! </span>
+          <strong className="text-2xl text-blue-600 dark:text-blue-700">
+            I'm Saif, a MERN and React Native Developer.
+          </strong>
+          <span className="text-gray-700 dark:text-gray-400 font-medium ">
+            I specialize in simplifying the complex, transforming ideas into
+            seamless experiences.
+          </span>
         </motion.p>
         <motion.div
-          className="flex gap-3 flex-col lg:flex-row text-center md:flex-row"
+          className="flex gap-3 flex-col lg:flex-row justify-center text-center md:flex-row"
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.4 }}
         >
           <Link
-            href="#"
-            className="bg-black text-white p-2 rounded-full items-center gap-1 hover:scale-105 active:scale-95 font-medium transition"
+            href="https://www.linkedin.com/in/saif-mohammed-2a4ab31a6/"
+            target="_blank"
+            rel="noreferrer"
+            className="bg-[#0077b5] text-white p-2 
+            px-3 rounded-full 
+            items-center gap-1 
+            hover:scale-105 
+            active:scale-95 font-medium transition
+            flex justify-center group"
           >
-            Hire me
+            Hire me <BsArrowRight className="group-hover:ml-2 transition-all" />
           </Link>
           <Link
             href="/assets/Resume.pdf"
-            target="_blank"
+            // target="_blank"
             className="flex bg-white p-2
              rounded-full justify-center 
              items-center gap-1 hover:scale-105
-              active:scale-95 font-medium transition"
+              active:scale-95 font-medium transition dark:text-gray-600 group"
             download={true}
           >
-            Download CV <HiDocumentDownload />
+            Download CV <HiDocumentDownload className="group-hover:mt-2" />
           </Link>
-          <p>Hire me</p>
+          <Link
+            href="https://github.com/Saif-Mohammed1"
+            target="_blank"
+            rel="noreferrer"
+            className=" bg-[#333] w-fit rounded-full p-2 self-center text-white hover:bg-gray-600"
+          >
+            <FaGithub />
+          </Link>
         </motion.div>
       </div>
     </section>

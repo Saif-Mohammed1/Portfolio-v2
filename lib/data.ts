@@ -14,7 +14,32 @@ import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 // import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-
+export const navLinks = [
+  {
+    name: "Home",
+    link: "#intro",
+  },
+  {
+    name: "About",
+    link: "#about",
+  },
+  {
+    name: "Projects",
+    link: "#projects",
+  },
+  {
+    name: "Skills",
+    link: "#skills",
+  },
+  {
+    name: "Experience",
+    link: "#experience",
+  },
+  {
+    name: "Contact",
+    link: "#contact",
+  },
+] as const;
 export const projectsData = [
   {
     img: Ecommerce,
@@ -54,7 +79,7 @@ export const projectsData = [
   },
   {
     img: Template1,
-    name: "HTML_CSS_Template_One",
+    name: "HTML-CSS-Template-One",
     desc: "the first project i've made ",
     Url: "https://saif-mohammed1.github.io/HTML_CSS_Template_One/",
     tags: ["html", "css"],
@@ -62,14 +87,14 @@ export const projectsData = [
   {
     img: Template2,
 
-    name: "HTML_CSS_Template_Two",
+    name: "HTML-CSS-Template-Two",
     desc: "the second project i've made ",
     Url: "https://saif-mohammed1.github.io/Template-Two/#",
     tags: ["html", "css"],
   },
   {
     img: Template3,
-    name: "HTML_CSS_Template_Three",
+    name: "HTML-CSS-Template-Three",
     desc: "user can move to each section by clicking on navbar section ",
     Url: "https://saif-mohammed1.github.io/HTML_And_CSS_Template_Three/",
     tags: ["html", "css", "javaScript"],

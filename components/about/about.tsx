@@ -1,10 +1,20 @@
 "use client";
 
+import { useActiveSectionContext } from "@/context/section-context";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
+  const { ref, inView } = useInView({ threshold: 0.9 });
+  const { setActiveSection } = useActiveSectionContext();
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("About");
+    }
+  }, [inView]);
   return (
-    <section id="about" className="section">
+    <section ref={ref} id="about" className="section text-center">
       <motion.h1
         // className="text-2xl text-center my-2 font-medium "
         className="title"
@@ -18,6 +28,7 @@ const About = () => {
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ delay: 0.23 }}
+        className="text-black/70 dark:text-gray-400 font-medium"
       >
         Hello, I'm Saif, a skilled web and Android developer with a strong
         background in utilizing essential tools to create innovative projects.

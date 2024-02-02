@@ -4,6 +4,7 @@ import Experience from "@/components/experience/experience";
 import Intro from "@/components/intro/intro";
 import Projects from "@/components/projects/projects";
 import Skills from "@/components/skills/skills";
+import ThemeSwitch from "@/components/theme/theme";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Skills />
       <Experience />
       <Contact />
+      <ThemeSwitch />
     </main>
   );
 }

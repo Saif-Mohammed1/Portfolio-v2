@@ -1,6 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
 import { skillsData } from "@/lib/data";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/section-context";
+import { useEffect } from "react";
 // const { ref } = useSectionView("Skills");
 const Skills = () => {
   const motionVariant = {
@@ -11,8 +14,15 @@ const Skills = () => {
       transition: { delay: 0.05 * inx },
     }),
   };
+  const { ref, inView } = useInView({ threshold: 0.6 });
+  const { setActiveSection } = useActiveSectionContext();
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Skills");
+    }
+  }, [inView]);
   return (
-    <section id="skills" className="section">
+    <section ref={ref} id="skills" className="section">
       <motion.h2
         className="title "
         initial={{ y: 100, opacity: 0 }}
@@ -30,7 +40,8 @@ const Skills = () => {
             key={skill}
             className="bg-white p-2 px-3 
             /text-white rounded-full
-            border border-black/40"
+            border border-black/40
+            dark:bg-gray-300 capitalize"
             variants={motionVariant}
             initial="initial"
             whileInView="animate"

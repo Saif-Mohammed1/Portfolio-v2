@@ -4,9 +4,12 @@ import { motion } from "framer-motion";
 import { emailSender } from "@/lib/action/action";
 import { toast } from "react-toastify";
 import { FaPaperPlane } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/section-context";
+import { useEffect, useState } from "react";
 
 const Contact = () => {
-  //   const [success, setSuccess] = useState<boolean>();
+  const [loading, setLoading] = useState<boolean>(false);
   // const [email, setEmail] = useState("");
   // const [massage, setMassage] = useState("");
   //   const form = useRef();
@@ -15,8 +18,15 @@ const Contact = () => {
   //     const event = e.target;
 
   //   };
+  const { ref, inView } = useInView({ threshold: 0.5 });
+  const { setActiveSection } = useActiveSectionContext();
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Contact");
+    }
+  }, [inView]);
   return (
-    <section id="contact" className="section">
+    <section ref={ref} id="contact" className="section">
       <motion.h2
         className="title"
         initial={{ y: 100, opacity: 0 }}
@@ -24,7 +34,7 @@ const Contact = () => {
       >
         Contact Me
       </motion.h2>
-      <p className=" text-gray-700 /dark:text-white/80 ">
+      <p className=" text-gray-700 dark:text-white/80 text-center ">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:saiff.mohammed1@gmail.com">
           saiff.mohammed1@gmail.com{" "}
@@ -34,16 +44,20 @@ const Contact = () => {
       <form
         id="emailSender"
         action={async (fromData) => {
-          const { error, success } = await emailSender(fromData);
+          setLoading(true);
 
-          if (error) {
-            console.log("error", error);
-
-            toast.error(error);
-            return;
+          try {
+            const { error, success } = await emailSender(fromData);
+            if (error) {
+              // console.log("error", error);
+              throw new Error(error);
+            }
+            toast.success(success);
+          } catch (error: any) {
+            toast.error(error.message || "An error occurred");
+          } finally {
+            setLoading(false);
           }
-
-          toast.success(success);
         }}
       >
         <input
@@ -71,9 +85,22 @@ const Contact = () => {
         ></textarea>
         <button
           type="submit"
-          className="bg-black/50 text-white p-2 px-4 rounded-full hover:bg-black/70 flex items-center gap-2"
+          className="bg-black/50 text-white p-2 
+          px-4 rounded-full hover:bg-black/70 
+          group outline-none dark:text-gray-300
+          dark:hover:bg-black/90 "
         >
-          Send <FaPaperPlane />
+          {loading ? (
+            <svg
+              className="animate-spin h-5 w-5 mr-3 border-[3px]  rounded-full border-white border-b-transparent"
+              viewBox="0 0 24 24"
+            ></svg>
+          ) : (
+            <span className="flex items-center gap-2 ">
+              Send
+              <FaPaperPlane className="group-hover:ml-1 group-hover:-mt-2" />
+            </span>
+          )}
         </button>
       </form>
 

@@ -5,16 +5,20 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 html {
   --line-color: #e5e7eb;
+}
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
 }
 .title {
   @apply text-2xl text-center my-2 font-medium;
 }
 .section {
-  @apply my-40;
+  @apply my-40  md:min-h-[75vh] scroll-mt-20;
 }
 .input {
-  @apply w-full p-4 outline-none border border-gray-700/40 my-2 rounded;
+  @apply w-full p-4 outline-none border border-gray-700/40 my-2 rounded dark:bg-gray-500 dark:text-gray-100 dark:font-medium;
 }
