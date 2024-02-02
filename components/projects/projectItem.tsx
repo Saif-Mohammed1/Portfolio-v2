@@ -33,7 +33,7 @@ export default function Project({ name, desc, tags, img, Url }: ProjectProps) {
         /sm:h-[20rem] hover:bg-gray-200
          transition sm:group-even:pl-8 
          dark:text-white dark:bg-white/10
-          dark:hover:bg-white/20"
+          dark:hover:bg-white/20 m-auto"
       >
         <div
           className="pt-4 pb-7 px-5 

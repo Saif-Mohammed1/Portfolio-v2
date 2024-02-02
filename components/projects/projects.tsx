@@ -26,7 +26,7 @@ const Projects = () => {
     }
   }, [inView]);
   return (
-    <section ref={ref} id="projects" className="section">
+    <section ref={ref} id="projects" className="section ">
       <motion.h2
         className="title"
         initial={{ x: 100, opacity: 0 }}
