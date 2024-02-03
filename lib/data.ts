@@ -160,6 +160,7 @@ export const skillsData = [
   "javaScript",
   "node.js",
   "react",
+  "react-native",
   "redux",
   "redux-saga",
   "next.js",
