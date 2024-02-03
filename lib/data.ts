@@ -1,8 +1,10 @@
 import Ecommerce from "../public/assets/image/ecommerce.png";
+import Eshop_Mobile from "../public/assets/image/Shop_mobile_app.png";
 import Shop from "../public/assets/image/shop.png";
 import Memory from "../public/assets/image/Memory-Game.png";
 import To from "../public/assets/image/TO-DO-LIST.png";
 import Weather from "../public/assets/image/Weather-App.png";
+import Weather_Mobile from "../public/assets/image/weather_mobile_app.png";
 import Template1 from "../public/assets/image/Leon-Template.png";
 import Template2 from "../public/assets/image/Kasper-Template-Two.png";
 import Template3 from "../public/assets/image/Template-Three.png";
@@ -43,29 +45,41 @@ export const navLinks = [
 export const projectsData = [
   {
     img: Ecommerce,
-    name: "Ecommerce&Laravel",
-    desc: "i worked as i full stuck in this project which i used laravel as backend server you can add product to card encress item decrement item you can check your cartitem",
+    // name: "Ecommerce&Laravel",
+    name: "EShop",
+    // desc: "i worked as i full stuck in this project which i used laravel as backend server you can add product to card encress item decrement item you can check your cartitem",
+    desc: "This project was performed as “I full stuck”. Powered by React and Redux on the frontend and backed by Laravel, my platform offers a rich user experience. This shop page represents a diverse array of items and a user-friendly cart system, which allows you to manage your selections. Sign up or log in securely using Google authentication or email.",
     Url: "https://ecommerce-v2-livid.vercel.app/",
     tags: ["react", "redux", "laravel", "styled-components"],
   },
   {
+    img: Eshop_Mobile,
+    // name: "Ecommerce&Laravel",
+    name: "EShop Mobile App",
+    desc: "Developed feature-rich Android apps, including a fully functional e-commerce app from scratch. Acquired skills in backend data management, implemented Redux for user session persistence, and added user-friendly cart and authentication. Leveraged Laravel as the backend service for efficiency and reliability.",
+    Url: "https://github.com/Saif-Mohammed1/Eshop-mobile-app/",
+    tags: ["react-native", "redux", "laravel", "styled-components"],
+  },
+  {
     img: Shop,
-    name: "Shop&firebase",
-    desc: "i worked as i full stuck in this project which i used google firebase as backend server you can add product to card encress item decrement item you can check your cartitem",
+    // name: "Shop&firebase",
+    name: "Clothes Shop",
+    // desc: "i worked as i full stuck in this project which i used google firebase as backend server you can add product to card encress item decrement item you can check your cartitem",
+    desc: "This project was performed as “I full stuck”, a React and Redux-powered e-commerce platform. Firebase is used as backend server here. This platform allows users to explore categories, shop for a diverse range of products and manage user-friendly cart system. Secure user authentication, supporting Google and email sign-ins, ensures a personalized experience.",
     Url: "https://superlative-chebakia-1f1043.netlify.app/",
     tags: ["react", "redux", "firebase", "styled-components"],
   },
   {
     img: Memory,
     name: "Memory-Game",
-    desc: "i used pure js here,in this project it taste memory game which is dynamic give random number to cards ",
+    desc: "Pure Js is used in this platform. The project is aimed to represent a game, which develops a good memory skill by implicating cards.",
     Url: "https://saif-mohammed1.github.io/Memory-Game/",
     tags: ["html", "css", "javaScript"],
   },
   {
     img: To,
     name: "To-DO-List",
-    desc: "user can add list to their daily list can remove double click on item if it done and don't worry if you reload the page because list saved on local storage",
+    desc: "The project is targeted at audience, which requires a platform for making To-Do-Lists. It allows users to add tasks to the list and remove them easily. It is possible to reload the page, as the data is saved on the local storage.",
 
     Url: "https://saif-mohammed1.github.io/To-DO-List/",
     tags: ["html", "css", "javaScript"],
@@ -73,9 +87,16 @@ export const projectsData = [
   {
     img: Weather,
     name: "Weather-App",
-    desc: "user can check weather on it region by entered the city name ",
+    desc: "The project is performed by React, Axios, Api, Css and aimed to give the possibility to check the weather depending on the regions.",
     Url: "https://fastidious-cupcake-4ef5a8.netlify.app/",
     tags: ["react", "axios", "api", "css"],
+  },
+  {
+    img: Weather_Mobile,
+    name: "Weather Mobile App",
+    desc: "Developed a React Native weather app for seamless weather updates. Users can search and monitor weather conditions globally. Features an intuitive interface, personalized city selection with AsyncStorage, and a visually pleasing design. Elevate your weather-checking experience with the Weather App.",
+    Url: "https://github.com/Saif-Mohammed1/Weather-app-react-native",
+    tags: ["react-native", "axios", "api", "tailwindcss"],
   },
   {
     img: Template1,
@@ -95,7 +116,7 @@ export const projectsData = [
   {
     img: Template3,
     name: "HTML-CSS-Template-Three",
-    desc: "user can move to each section by clicking on navbar section ",
+    desc: "The project was done by using HTML, Css and Javascript, and represents the feature of moving to different sections of the page by clicking on the navbar section.",
     Url: "https://saif-mohammed1.github.io/HTML_And_CSS_Template_Three/",
     tags: ["html", "css", "javaScript"],
   },
@@ -109,14 +130,14 @@ export const projectsData = [
   {
     img: Youtube,
     name: "youtube-api",
-    desc: "user can fetch youtube playlist data by entering the URL for the list",
+    desc: "This platform allows users to fetch Youtube playlist data by entering the URL for the list.",
     Url: "https://strong-cranachan-9d6614.netlify.app/",
     tags: ["react", "api", "styled-components"],
   },
   {
     img: Spacial,
     name: "Spacial-Design",
-    desc: "user can change theme color also can allow to background to move or be static change word's color..... ",
+    desc: "This project was performed by using HTML, Css and Javascript. It allows users to change theme, color or other features in general.",
 
     Url: "https://saif-mohammed1.github.io/Spacial-Design/",
     tags: ["html", "css", "javaScript"],
@@ -146,6 +167,7 @@ export const skillsData = [
   "express",
   "git",
   "firebase",
+  "PugJs",
 ] as const;
 
 export const experiencesData = [
