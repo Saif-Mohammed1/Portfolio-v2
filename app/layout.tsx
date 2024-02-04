@@ -12,7 +12,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Personal Portfolio",
-  description: "I'm a mern stuck developer",
+  description:
+    "Hi there! I'm Saif, a MERN and React Native Developer.I specialize in simplifying the complex, transforming ideas into seamless experiences.",
 };
 
 export default function RootLayout({
