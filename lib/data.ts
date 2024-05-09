@@ -12,6 +12,7 @@ import Manage from "../public/assets/image/manage-landing-page.png";
 import Youtube from "../public/assets/image/youtube-api.png";
 import Spacial from "../public/assets/image/Spacial-Design.png";
 import Sunnyside from "../public/assets/image/SunnySide.png";
+import fashFlash from "../public/assets/image/fashFlash.png";
 import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 // import { CgWorkAlt } from "react-icons/cg";
@@ -43,6 +44,32 @@ export const navLinks = [
   },
 ] as const;
 export const projectsData = [
+  {
+    name: "fashFlash",
+    desc: "Crafted a feature-rich web application independently. Users can filter products by category, rating, price range, or search by name. Clicking on a product displays detailed information including price, description, and discounts, with options to add to cart or wishlist. Authenticated users can save items for later viewing. The platform includes user roles for normal users, sellers, and admins, each with specific permissions. Security features include email verification, login blocking, and rate limiting. Users receive email notifications upon purchase completion and can track order progress. Additional features include user profile management, password reset, and product management for sellers. Admins have access to a comprehensive dashboard to manage all data. Business logic optimizations ensure security and reliability.",
+    Url: "https://ecommerce-v2-livid.vercel.app/",
+    tags: [
+      "mui/material",
+
+      "bcryptjs",
+      "cloudinary",
+      "countries-list",
+      "jsonwebtoken",
+      "mongoose",
+      "next",
+      "next-auth",
+      "node-cron",
+      "nodemailer",
+      "react",
+      "react-dom",
+      "react-toastify",
+      "stripe",
+      "styled-components",
+      "sweetalert2",
+      "uploadthing",
+    ],
+    img: fashFlash,
+  },
   {
     img: Ecommerce,
     // name: "Ecommerce&Laravel",
@@ -179,6 +206,12 @@ export const experiencesData = [
     desc: "Enriching experience in a React Native bootcamp, gaining proficiency in cross-platform mobile app development. Covered essential concepts, including data handling, version control, and React basics. Developed a Capstone project and honed programming skills in JavaScript, laying a solid foundation for continued growth.",
     icon: React.createElement(LuGraduationCap),
     date: "2023",
+  },
+  {
+    name: "feature-rich web application",
+    desc: "Crafted a feature-rich web application independently. Proficient in advanced filtering for product search, detailed product information display, and user authentication with session persistence. Implemented multiple user roles for varied permissions. Security features include email verification and login blocking. Users receive order notifications and can request refunds. Admins manage the platform via a comprehensive dashboard. Leveraged business logic optimization for enhanced security.",
+    icon: React.createElement(FaReact),
+    date: "2024",
   },
   {
     name: "full stack developer",
