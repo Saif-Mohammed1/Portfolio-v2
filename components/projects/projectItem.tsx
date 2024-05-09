@@ -75,6 +75,7 @@ export default function Project({ name, desc, tags, img, Url }: ProjectProps) {
         />
         <Link
           href={Url}
+          target="_blank"
           className="bg-black/50 absolute -bottom-8 
           w-full group-hover:bottom-0 p-1 
           text-white transition-all 
