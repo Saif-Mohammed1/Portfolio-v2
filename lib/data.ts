@@ -47,7 +47,7 @@ export const projectsData = [
   {
     name: "fashFlash",
     desc: "Crafted a feature-rich web application independently. Users can filter products by category, rating, price range, or search by name. Clicking on a product displays detailed information including price, description, and discounts, with options to add to cart or wishlist. Authenticated users can save items for later viewing. The platform includes user roles for normal users, sellers, and admins, each with specific permissions. Security features include email verification, login blocking, and rate limiting. Users receive email notifications upon purchase completion and can track order progress. Additional features include user profile management, password reset, and product management for sellers. Admins have access to a comprehensive dashboard to manage all data. Business logic optimizations ensure security and reliability.",
-    Url: "https://ecommerce-v2-livid.vercel.app/",
+    Url: "https://fashflash.netlify.app/",
     tags: [
       "mui/material",
 
