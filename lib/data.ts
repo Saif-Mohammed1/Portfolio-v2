@@ -201,18 +201,19 @@ export const skillsData = [
 
 export const experiencesData = [
   {
+    name: "feature-rich web application",
+    desc: "Crafted a feature-rich web application independently. Proficient in advanced filtering for product search, detailed product information display, and user authentication with session persistence. Implemented multiple user roles for varied permissions. Security features include email verification and login blocking. Users receive order notifications and can request refunds. Admins manage the platform via a comprehensive dashboard. Leveraged business logic optimization for enhanced security.",
+    icon: React.createElement(FaReact),
+    date: "2024",
+  },
+  {
     name: "meta react native bootcamp",
     // desc: '"I embarked on an enriching journey during the camp, where I delved into a multitude of valuable tools and skills. This transformative experience served as a pivotal advantage in my learning journey. I gained proficiency in React Native, a powerful framework for building cross-platform mobile applications. The curriculum extended beyond the realm of frameworks and libraries, encompassing fundamental concepts like working with data, mastering version control, and developing a Capstone project using React. The program covered the essentials, including React basics, principles of UX/UI design, and an insightful introduction to mobile development. My programming skills were honed through hands-on exercises, particularly focusing on JavaScript, the language that powers the dynamic functionalities of web and mobile applications. This comprehensive exposure equipped me with a well-rounded skill set, laying a solid foundation for my continued growth in the world of software development.',
     desc: "Enriching experience in a React Native bootcamp, gaining proficiency in cross-platform mobile app development. Covered essential concepts, including data handling, version control, and React basics. Developed a Capstone project and honed programming skills in JavaScript, laying a solid foundation for continued growth.",
     icon: React.createElement(LuGraduationCap),
     date: "2023",
   },
-  {
-    name: "feature-rich web application",
-    desc: "Crafted a feature-rich web application independently. Proficient in advanced filtering for product search, detailed product information display, and user authentication with session persistence. Implemented multiple user roles for varied permissions. Security features include email verification and login blocking. Users receive order notifications and can request refunds. Admins manage the platform via a comprehensive dashboard. Leveraged business logic optimization for enhanced security.",
-    icon: React.createElement(FaReact),
-    date: "2024",
-  },
+
   {
     name: "full stack developer",
     // desc: 'I"ve created full stack ecommerce by my own i lreand how to mange and handle data from backend and how to send it i added useful feature such redux which save user session on reload also i added cart,user authentication also google auth service I google firebase as backend service  ',
