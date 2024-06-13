@@ -63,7 +63,7 @@ const Intro = () => {
         >
           <span className="font-bold text-gray-800">Hi there! </span>
           <strong className="text-2xl text-blue-600 dark:text-blue-700">
-            I'm Saif, a MERN and React Native Developer.
+            I'm Saif, a MERN Stack Developer.
           </strong>
           <span className="text-gray-700 dark:text-gray-400 font-medium ">
             I specialize in simplifying the complex, transforming ideas into

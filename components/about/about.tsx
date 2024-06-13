@@ -30,14 +30,17 @@ const About = () => {
         transition={{ delay: 0.23 }}
         className="text-black/70 dark:text-gray-400 font-medium"
       >
-        Hello, I'm Saif, a skilled web and Android developer with a strong
-        background in utilizing essential tools to create innovative projects.
-        My expertise extends to frameworks like React and React Native, where
-        I've successfully built applications ranging from e-commerce solutions
-        to dynamic web pages. I'm passionate about transforming ideas into
-        functional and user-friendly digital experiences. If you have exciting
-        projects in mind, please feel free to contact me; I'd love to
-        collaborate and turn your ideas into reality.
+        Hello, I'm Saif, an experienced web developer dedicated to creating
+        innovative and user-centric digital solutions. With a proven track
+        record of transforming ideas into functional, high-performance web
+        applications, I am committed to delivering exceptional user experiences
+        through meticulous attention to detail and a deep understanding of
+        modern web technologies. My extensive experience includes developing
+        dynamic web pages, robust backend systems, and seamless user interfaces,
+        all while ensuring security and scalability. I thrive in collaborative
+        environments and am passionate about leveraging my expertise to turn
+        visionary projects into reality. Let's work together to create something
+        extraordinary.
       </motion.p>
     </section>
   );
