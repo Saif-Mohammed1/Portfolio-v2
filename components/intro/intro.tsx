@@ -90,7 +90,7 @@ const Intro = () => {
             Hire me <BsArrowRight className="group-hover:ml-2 transition-all" />
           </Link>
           <Link
-            href="/assets/Resume.pdf"
+            href="/assets/Resume.docx"
             // target="_blank"
             className="flex bg-white p-2
              rounded-full justify-center 

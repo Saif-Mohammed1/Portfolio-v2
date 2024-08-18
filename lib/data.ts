@@ -197,6 +197,7 @@ export const skillsData = [
   "firebase",
   "PugJs",
   "OWASP Top 10 vulnerabilities",
+  "Postman",
 ] as const;
 
 export const experiencesData = [
