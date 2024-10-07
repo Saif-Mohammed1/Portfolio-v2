@@ -13,6 +13,7 @@ import Youtube from "../public/assets/image/youtube-api.png";
 import Spacial from "../public/assets/image/Spacial-Design.png";
 import Sunnyside from "../public/assets/image/SunnySide.png";
 import fashFlash from "../public/assets/image/fashFlash.png";
+import завзятий from "../public/assets/image/завзятий-господар.png";
 import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 // import { CgWorkAlt } from "react-icons/cg";
@@ -44,6 +45,32 @@ export const navLinks = [
   },
 ] as const;
 export const projectsData = [
+  {
+    name: "завзятий господар",
+    desc: "Launched an advanced and secure e-commerce platform built with TypeScript for type safety and maintainability. Key features include auto-updating home page, comprehensive shop page with filters, detailed product descriptions, robust cart management, secure account management with two-factor email verification, and full order tracking. Security features encompass rate limiting, token-based authentication, role-based access control, brute force protection, device management, and email notifications for suspicious activities. The tech stack includes Next.js, TypeScript, MongoDB, Tailwind CSS, JWT, NextAuth, Stripe, Vercel, React Toastify, React ChartJS, and React Slick.",
+    Url: "https://test-mode-liard.vercel.app/",
+    tags: [
+      "bcryptjs",
+      "cloudinary",
+      "countries-list",
+      "jsonwebtoken",
+      "mongoose",
+      "next",
+      "next-auth",
+      "nodemailer",
+      "react",
+      "react-toastify",
+      "stripe",
+      "typescript",
+      "slider",
+      "axios",
+      "lottie-react",
+      "chart.js",
+      "moment",
+      "tailwindcss",
+    ],
+    img: завзятий,
+  },
   {
     name: "fashFlash",
     desc: "Crafted a feature-rich web application independently. Users can filter products by category, rating, price range, or search by name. Clicking on a product displays detailed information including price, description, and discounts, with options to add to cart or wishlist. Authenticated users can save items for later viewing. The platform includes user roles for normal users, sellers, and admins, each with specific permissions. Security features include email verification, login blocking, and rate limiting. Users receive email notifications upon purchase completion and can track order progress. Additional features include user profile management, password reset, and product management for sellers. Admins have access to a comprehensive dashboard to manage all data. Business logic optimizations ensure security and reliability.",
@@ -185,13 +212,15 @@ export const skillsData = [
   "tailwind",
   "styled-component",
   "javaScript",
-  "node.js",
+  "typescript",
+  "nodeJs",
   "react",
   "react-native",
   "redux",
   "redux-saga",
-  "next.js",
+  "nextJs",
   "mongoDB",
+  "mangoose",
   "express",
   "git",
   "firebase",
@@ -201,6 +230,14 @@ export const skillsData = [
 ] as const;
 
 export const experiencesData = [
+  {
+    name: "завзятий господар",
+    // desc: "🌟 Launching an Advanced & Secure E-Commerce Platform! 🌟 I'm thrilled to announce the completion of a secure, feature-rich e-commerce platform, designed with cutting-edge technologies and a seamless user experience. It’s built with TypeScript for type safety and maintainability, ensuring a high level of code quality. 🚀 Key Features: Home Page: Auto-updates with new products. Highlights top-rated items based on customer feedback. Showcases the best offers and discounts. Shop Page: Filter products by category, rating, and price. Seamless 'Add to Cart' and product sharing functionality. Product Details: Full descriptions, stock, customer reviews, and related products. Cart Management: Edit, remove, or adjust product quantities, and checkout smoothly. Account Management: Secure login, registration, and account updates, including two-factor email verification. Order Tracking: Full order history with downloadable invoices and receipts. 🔐 Security Features: Rate Limiting: Prevents excessive requests and DoS attacks. Token-Based Authentication: JWT & Refresh Tokens for secure session management. Access tokens stored in memory to prevent CSRF attacks, and refresh tokens stored in HTTP-only cookies for XSS protection. Role-Based Access Control: Ensures only authorized users access sensitive areas like the admin dashboard. Brute Force Protection: Limits failed login attempts, defending against brute force attacks. Device Management: Users can log out from unknown devices and monitor login activity. Email Notifications: Alerts for suspicious activity like unknown device logins or email changes. 💻 Tech Stack: Next.js: Full-stack framework with server-side rendering. TypeScript: Ensuring strong type safety and scalability. MongoDB: For handling complex data with ease. Tailwind CSS: Clean, responsive design with modern UI elements. JWT & NextAuth: Secure authentication. Stripe: Integrated for seamless and secure payments. Vercel: Auto-scaling deployment and optimized performance. React Toastify: For in-app notifications. React ChartJS & React Slick: To enhance user interaction with dynamic charts and product displays. This project has been an exciting challenge, blending advanced features with top-tier security to deliver an exceptional shopping experience. I'd love to hear your thoughts! 🔥",
+
+    desc: "Launched an advanced and secure e-commerce platform with TypeScript for type safety and maintainability. Key features include auto-updating home page, comprehensive shop page with filters, detailed product descriptions, robust cart management, secure account management with two-factor email verification, and full order tracking. Security features include rate limiting, token-based authentication, role-based access control, brute force protection, device management, and email notifications for suspicious activities. The tech stack includes Next.js, TypeScript, MongoDB, Tailwind CSS, JWT, NextAuth, Stripe, Vercel, React Toastify, React ChartJS, and React Slick.",
+    icon: React.createElement(FaReact),
+    date: "2024",
+  },
   {
     name: "feature-rich web application",
     desc: "Crafted a feature-rich web application independently. Proficient in advanced filtering for product search, detailed product information display, and user authentication with session persistence. Implemented multiple user roles for varied permissions. Security features include email verification and login blocking. Users receive order notifications and can request refunds. Admins manage the platform via a comprehensive dashboard. Leveraged business logic optimization for enhanced security.",

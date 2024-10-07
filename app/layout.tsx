@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   title: "Personal Portfolio",
   description:
     "Hi there! I'm Saif, a MERN and React Native Developer.I specialize in simplifying the complex, transforming ideas into seamless experiences.",
+  keywords:
+    "MERN Stack Developer, React Native Developer, Full Stack Developer, Web Developer, Mobile Developer, Saif Mohammed, Saif, Mohammed, Saif Mohammed Portfolio, Saif Portfolio, Saif Mohammed Website, Saif Website, Saif Mohammed Developer, Saif Developer, Saif Mohammed Full Stack Developer, Saif Full Stack Developer, Saif Mohammed MERN Stack Developer, Saif MERN Stack Developer, Saif Mohammed React Native Developer, Saif React Native Developer, Saif Mohammed Web Developer, Saif Web Developer, Saif Mohammed Mobile Developer, Saif Mobile Developer",
 };
 
 export default function RootLayout({
