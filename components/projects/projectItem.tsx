@@ -76,7 +76,7 @@ export default function Project({ name, desc, tags, img, Url }: ProjectProps) {
                 {tag}
               </li>
             ))}
-            {!showSkills && (
+            {!showSkills && tags.length > 5 && (
               <button
                 onClick={() => setShowSkills(true)}
                 className="text-blue-500 hover:underline"
