@@ -239,6 +239,8 @@ export const skillsData = [
   "OWASP Top 10 vulnerabilities",
   "Postman",
   "docker",
+  "zod",
+  "react-hook-form",
 ] as const;
 
 export const experiencesData = [
